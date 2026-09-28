@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ayah 💙</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #020617, #0a192f, #102a43);
+    color: #e0f2fe;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* BINTANG */
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.7); }
+    50% { opacity: 1; transform: scale(1.3); }
+}
+
+/* KONTEN */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: auto;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #60a5fa;
+    border-radius: 50px;
+    color: #bfdbfe;
+    background: rgba(30, 64, 175, 0.2);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(55px, 10vw, 95px);
+    color: #93c5fd;
+    text-shadow: 0 0 25px rgba(96,165,250,0.5);
+    line-height: 1.3;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.heart {
+    font-size: 45px;
+    margin: 25px 0;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* KARTU */
+.card {
+    margin-top: 35px;
+    padding: 35px;
+    background: rgba(15, 35, 65, 0.75);
+    border: 1px solid rgba(147,197,253,0.3);
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(30,64,175,0.2);
+    backdrop-filter: blur(12px);
+    text-align: left;
+    line-height: 2;
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+.card h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: #93c5fd;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+.signature {
+    text-align: right;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    color: #93c5fd;
+    margin-top: 30px;
+}
+
+/* TOMBOL */
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgba(59,130,246,0.35);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(96,165,250,0.6);
+}
+
+/* KEJUTAN */
+#surprise {
+    display: none;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(30,64,175,0.2);
+    border: 1px solid #60a5fa;
+    animation: fadeIn 1s ease;
+    line-height: 2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* HUJAN HATI */
+.floating {
+    position: fixed;
+    bottom: -50px;
+    font-size: 22px;
+    pointer-events: none;
+    animation: floatUp 5s linear forwards;
+    z-index: 5;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    color: #94a3b8;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.footer span {
+    color: #93c5fd;
+}
+
+@media(max-width:600px) {
+    .container { padding: 35px 15px; }
+    .card { padding: 25px 20px; font-size: 14px; }
+    .card h2 { font-size: 35px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="container">
+
+    <div class="badge">A SPECIAL DAY FOR SOMEONE SPECIAL ✨</div>
+
+    <h1>Happy Birthday</h1>
+    <h1>Ayahhh 💙</h1>
+
+    <p class="subtitle">
+        TO THE BEST FATHER IN THE WHOLE WORLD
+    </p>
+
+    <div class="heart">💙</div>
+
+    <div class="card">
+
+        <h2>Untuk Ayah Tersayang...</h2>
+
+        <p>
+            <span class="highlight">Selamat ulang tahun, Ayahhhhh!</span> 🥳💙
+            Hari ini adalah hari yang sangat spesial, karena pada hari ini
+            seseorang yang begitu berarti dalam hidupku dilahirkan ke dunia.
+            Seseorang yang selalu menjadi tempat pulang, tempat berlindung,
+            tempat belajar tentang kehidupan, dan seseorang yang kasih
+            sayangnya tidak akan pernah bisa tergantikan oleh siapa pun.
+        </p>
+
+        <p>
+            Ayahhh, di hari ulang tahun Ayah ini, aku mau mengucapkan
+            terima kasih yang sebanyak-banyaknya untuk semua hal yang
+            mungkin selama ini belum sempat aku ucapkan secara langsung.
+            Terima kasih karena sudah menjadi Ayah yang luar biasa.
+            Terima kasih karena sudah berjuang begitu keras untuk keluarga.
+            Terima kasih karena selalu berusaha memberikan yang terbaik,
+            bahkan ketika Ayah sendiri sedang lelah, sedang banyak pikiran,
+            atau sedang menghadapi masalah yang mungkin tidak pernah
+            Ayah ceritakan kepada siapa pun.
+        </p>
+
+        <p>
+            Aku tahu, menjadi seorang Ayah bukanlah hal yang mudah.
+            Ada banyak tanggung jawab, banyak pengorbanan, banyak
+            kekhawatiran, dan mungkin banyak hal yang harus Ayah
+            pendam sendiri demi melihat keluarga tetap bahagia.
+            Tapi Ayah harus tahu satu hal, bahwa semua perjuangan Ayah
+            sangat berarti. Semua usaha Ayah tidak pernah sia-sia.
+            Dan aku benar-benar bersyukur karena Tuhan sudah
+            menghadirkan Ayah dalam hidupku.
+        </p>
+
+        <p>
+            Ayahhh, mungkin aku bukan anak yang selalu bisa menunjukkan
+            rasa sayang dengan baik. Mungkin terkadang aku masih suka
+            membantah, masih suka membuat Ayah khawatir, masih suka
+            membuat Ayah kesal, atau bahkan terkadang lupa mengucapkan
+            terima kasih untuk hal-hal kecil yang Ayah lakukan.
+            Tapi percayalah, jauh di dalam hati ini, aku sayang banget
+            sama Ayah. Sayang yang mungkin tidak selalu bisa dijelaskan
+            dengan kata-kata, tapi akan selalu ada dan tidak akan pernah
+            berkurang.
+        </p>
+
+        <p>
+            Aku ingin Ayah tahu bahwa kehadiran Ayah adalah salah satu
+            hadiah terindah yang pernah aku miliki. Tidak peduli seberapa
+            jauh aku melangkah nanti, tidak peduli seberapa besar aku
+            tumbuh dewasa, Ayah akan selalu menjadi sosok yang aku
+            banggakan. Sosok yang ingin selalu aku bahagiakan.
+            Sosok yang ingin selalu aku lihat tersenyum.
+        </p>
+
+        <p>
+            Di usia Ayah yang baru ini, aku berdoa semoga Allah selalu
+            memberikan kesehatan yang luar biasa untuk Ayah.
+            Semoga setiap langkah Ayah selalu dilindungi, setiap urusan
+            Ayah dimudahkan, setiap rezeki Ayah dilancarkan, dan setiap
+            doa baik yang Ayah panjatkan satu per satu dikabulkan.
+            Semoga Allah memberikan umur yang panjang, umur yang berkah,
+            hati yang tenang, pikiran yang damai, serta kebahagiaan
+            yang tidak pernah putus.
+        </p>
+
+        <p>
+            Semoga Ayah selalu diberikan kekuatan dalam menghadapi
+            setiap perjalanan hidup. Kalau selama ini Ayah sering
+            menjadi alasan orang lain tersenyum, semoga mulai hari ini
+            dunia juga memberikan banyak alasan untuk Ayah tersenyum.
+            Semoga segala lelah Ayah diganti dengan kebahagiaan,
+            segala kesedihan diganti dengan ketenangan, dan segala
+            pengorbanan Ayah dibalas dengan kebaikan yang berlipat ganda.
+        </p>
+
+        <p>
+            Aku juga berdoa semoga Ayah bisa terus menemani perjalanan
+            hidupku dalam waktu yang sangat panjang. Aku masih ingin
+            punya banyak waktu bersama Ayah. Masih ingin mendengar
+            cerita-cerita Ayah, masih ingin bercanda bersama Ayah,
+            masih ingin membuat banyak kenangan indah, dan masih ingin
+            punya banyak kesempatan untuk membahagiakan Ayah.
+        </p>
+
+        <p>
+            Suatu hari nanti, aku ingin menjadi seseorang yang bisa
+            membuat Ayah bangga. Aku ingin bisa membalas semua
+            kebaikan Ayah, meskipun aku tahu tidak akan pernah ada
+            sesuatu yang benar-benar bisa membayar semua pengorbanan
+            Ayah selama ini. Aku ingin melihat Ayah duduk dengan
+            tenang, tersenyum bahagia, dan berkata bahwa semua
+            perjuangan Ayah selama ini tidak sia-sia.
+        </p>
+
+        <p>
+            Ayahhh, kalau suatu saat nanti aku berhasil mencapai
+            mimpi-mimpiku, aku ingin Ayah menjadi salah satu orang
+            pertama yang menyaksikannya. Aku ingin Ayah tahu bahwa
+            di balik setiap langkah kecilku, ada doa Ayah yang
+            menguatkanku. Ada nasihat Ayah yang aku ingat.
+            Ada kasih sayang Ayah yang menjadi salah satu alasan
+            aku terus berusaha.
+        </p>
+
+        <p>
+            Terima kasih sudah menjadi rumah yang selalu ingin aku
+            tuju. Terima kasih sudah menjadi tempat aku belajar
+            tentang arti tanggung jawab, ketulusan, kesabaran,
+            dan perjuangan. Terima kasih karena tidak pernah
+            berhenti berusaha menjadi Ayah yang terbaik.
+            Bahkan ketika Ayah merasa belum melakukan cukup banyak,
+            bagiku Ayah sudah sangat berarti.
+        </p>
+
+        <p>
+            Maaf ya, Yahhh, kalau selama ini aku masih sering
+            membuat Ayah kecewa. Maaf kalau terkadang perkataanku
+            kurang baik, sikapku masih kekanak-kanakan, atau
+            aku belum bisa menjadi anak yang Ayah harapkan.
+            Aku masih belajar, Yah. Masih berusaha menjadi
+            pribadi yang lebih baik. Doakan aku supaya suatu
+            hari nanti bisa menjadi anak yang membanggakan
+            dan bisa membahagiakan Ayah dengan caraku sendiri.
+        </p>
+
+        <p>
+            Dan satu hal yang paling ingin aku katakan hari ini:
+            <span class="highlight">
+            AYAH TIDAK HARUS SELALU KUAT, AYAH JUGA BOLEH CAPEK.
+            </span>
+            Kalau dunia sedang terasa berat, semoga Ayah selalu
+            ingat bahwa Ayah tidak sendirian. Ada keluarga yang
+            menyayangi Ayah, ada aku yang selalu mendoakan Ayah,
+            dan ada banyak cinta yang akan selalu menyertai Ayah.
+        </p>
+
+        <p>
+            Semoga hari ini menjadi awal dari banyak kebahagiaan
+            baru dalam hidup Ayah. Semoga setiap hari ke depan
+            dipenuhi hal-hal baik, tawa yang tulus, kabar yang
+            menggembirakan, dan momen-momen sederhana yang
+            membuat Ayah merasa bahwa hidup ini begitu indah.
+        </p>
+
+        <p>
+            Sekali lagi, selamat ulang tahun, Ayahhhhh!
+            Terima kasih sudah lahir ke dunia.
+            Terima kasih sudah menjadi Ayahku.
+            Terima kasih sudah menjadi bagian paling berharga
+            dalam hidupku.
+        </p>
+
+        <p>
+            Aku sayang Ayah, hari ini, besok, lusa, dan
+            seterusnya. Semoga Allah selalu menjaga Ayah,
+            di mana pun Ayah berada, dalam keadaan apa pun,
+            dan di setiap langkah kehidupan Ayah.
+        </p>
+
+        <p>
+            <span class="highlight">
+            I LOVE YOU SO MUCH, AYAHHHH. 💙
+            YOU WILL ALWAYS BE MY FIRST HERO,
+            MY HOME, AND MY FOREVER FAVORITE PERSON.
+            </span>
+        </p>
+
+        <div class="signature">
+            Dengan penuh cinta,<br>
+            Anakmu yang selalu sayang Ayah 💙
+        </div>
+
+    </div>
+
+    <button onclick="showSurprise()">
+        Klik untuk kejutan kecil dari anakmu 💌
+    </button>
+
+    <div id="surprise">
+        <h2 style="font-family:'Great Vibes';font-size:38px;color:#93c5fd;">
+            A Little Wish For You 💙
+        </h2>
+
+        <p>
+            Ayahhh, tutup mata sebentar dan bayangkan semua doa baik
+            sedang terbang menuju Ayah malam ini. ✨
+        </p>
+
+        <p>
+            Semoga setiap tahun yang bertambah bukan hanya angka,
+            tetapi juga kebahagiaan, kesehatan, ketenangan,
+            dan semakin banyak alasan untuk bersyukur.
+        </p>
+
+        <p>
+            Kalau aku boleh meminta satu hal kepada Tuhan,
+            aku ingin Ayah selalu sehat dan bahagia,
+            supaya aku masih punya banyak waktu untuk berkata...
+        </p>
+
+        <h2 style="color:#bfdbfe;font-family:'Great Vibes';font-size:40px;">
+            "Ayahhh, aku sayang Ayah." 💙
+        </h2>
+
+        <p>Happy Birthday, My Forever Hero! 🎂</p>
+    </div>
+
+    <div class="footer">
+        MADE WITH <span>💙</span> AND LOTS OF LOVE<br>
+        FOR THE BEST DAD IN THE WORLD
+    </div>
+
+</div>
+
+<script>
+// Membuat bintang secara otomatis
+const stars = document.getElementById("stars");
+
+for (let i = 0; i < 100; i++) {
+    const star = document.createElement("div");
+    star.className = "star";
+
+    const size = Math.random() * 3 + 1;
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+    star.style.left = Math.random() * 100 + "%";
+    star.style.top = Math.random() * 100 + "%";
+    star.style.animationDelay = Math.random() * 3 + "s";
+
+    stars.appendChild(star);
+}
+
+// Tombol kejutan
+function showSurprise() {
+    const surprise = document.getElementById("surprise");
+
+    surprise.style.display = "block";
+
+    surprise.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    // Hujan hati biru
+    for (let i = 0; i < 35; i++) {
+        setTimeout(createHeart, i * 100);
+    }
+}
+
+// Membuat hati melayang
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "floating";
+    heart.innerHTML = ["💙", "💖", "✨", "💫"][Math.floor(Math.random() * 4)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}
+
+// Hati kecil muncul sesekali
+setInterval(() => {
+    if (Math.random() > 0.5) {
+        createHeart();
+    }
+}, 1800);
+</script>
+
+</body>
+</html>
